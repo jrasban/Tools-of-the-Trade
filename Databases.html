@@ -12,7 +12,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body,h1,h2 {font-family: "Montserrat", sans-serif}
-
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    }
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
 </style>
 <body>
 
@@ -29,6 +38,7 @@
 </nav>
 
 <!-- !PAGE CONTENT! -->
+   
 <div class="w3-content" style="max-width:1500px">
 
 <!-- Header -->
@@ -43,8 +53,13 @@
 
 
 <!-- Content  -->
-<div>
-  <img src="static/sqlite370_banner.gif" alt="Photo">
+<div class="row">
+    <div class="column">
+        <img src="static/sqlite370_banner.gif" alt="Photo">
+    </div>
+    <div class="column">
+        <img src="static/mysql.png" alt="Photo">
+    </div>
 </div>
 
 
