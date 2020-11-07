@@ -23,6 +23,7 @@
     clear: both;
     display: block;
     }
+    .pointer {cursor: pointer;}
 </style>
 <body>
 
@@ -55,7 +56,7 @@
 <!-- Content  -->
     <div class="row">
     <div class="column">
-        <img id="sqlite" src="static/sqlite.png" alt="Photo" width=80% height=80% >
+        <img class="pointer" id="sqlite" src="static/sqlite.png" alt="Photo" width=80% height=80% >
         <script type="text/javascript">
         document.getElementById("sqlite").onclick = function () {
         location.href = "https://jrasban.github.io/Tools-of-the-Trade/Sqlite.html";
@@ -63,7 +64,7 @@
         </script>
     </div>
     <div class="column">
-        <img id="mysql" src="static/mysql.png" alt="Photo" width=80% height=80%>
+        <img class="pointer" id="mysql" src="static/mysql.png" alt="Photo" width=80% height=80%>
         <script type="text/javascript">
         document.getElementById("mysql").onclick = function () {
         location.href = "https://jrasban.github.io/Tools-of-the-Trade/mysql.html";
@@ -71,7 +72,7 @@
         </script>
     </div>
     <div class="column">
-        <img src="static/sqlserver.png" alt="Photo" width=80% height=80%>
+        <img class="pointer" src="static/sqlserver.png" alt="Photo" width=80% height=80%>
     </div>
     </div>
 
