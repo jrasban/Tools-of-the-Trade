@@ -12,7 +12,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body,h1,h2 {font-family: "Montserrat", sans-serif}
-
+    .column {
+    float: Left;
+    width: 33.33%;
+    margin:0 auto;
+    text-align: center;
+    }
+    .row::after {
+    content: "";
+    clear: both;
+    display: block;
+    }
+    .pointer {cursor: pointer;}
 </style>
 <body>
 
@@ -40,6 +51,32 @@
   <br></br>
 </header>
 </div>
+
+<!-- Content  -->
+    <div class="row">
+    <div class="column">
+        <img class="pointer" id="python" src="static/python.png" alt="Photo" width=60% height=60% >
+        <script type="text/javascript">
+        document.getElementById("python").onclick = function () {
+        location.href = "";
+        };
+        </script>
+    </div>
+    <div class="column">
+        <img class="pointer" id="pycharm" src="static/pycharm.png" alt="Photo" width=60% height=60%>
+        <script type="text/javascript">
+        document.getElementById("pycharm").onclick = function () {
+        location.href = "";
+        };
+        </script>
+    </div>
+    <div class="column">
+        <img class="pointer" src="static/jupyter.png" alt="Photo" width=60% height=60%>
+    </div>
+    </div>
+
+
+
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
